@@ -9,9 +9,9 @@ if (APPLE)
     # For Macs, override the paths here
 else ()
     # to compile in linux machine using g++-6.3.0
-    include_directories(/usr/local/include/c++/6.3.0)
-    set(CMAKE_CXX_COMPILER "/usr/local/bin/x86_64-pc-linux-gnu-g++")
-    set(CMAKE_C_COMPILER "/usr/local/bin/x86_64-pc-linux-gnu-gcc-6.3.0")
+    include_directories(/mnt/sata3_storage/pipe_app/gcc-6.5.0/include) # to be modified
+    set(CMAKE_CXX_COMPILER "/mnt/sata3_storage/pipe_app/gcc-6.5.0/bin/g++") # to be modified
+    set(CMAKE_C_COMPILER "/mnt/sata3_storage/pipe_app/gcc-6.5.0/bin/g++") # to be modified
     SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,-rpath -Wl,/usr/local/lib64")
 endif ()
 

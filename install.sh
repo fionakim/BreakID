@@ -2,6 +2,7 @@
 bash ./generate_installDIR.sh
 # compile samtools
 cd thirdparty/samtools/samtools-1.3.1/
+
 make -j 16
 cd ../../../
 
